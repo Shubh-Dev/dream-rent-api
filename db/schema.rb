@@ -27,6 +27,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_24_131420) do
   end
 
   create_table "houses", force: :cascade do |t|
+    t.string "address"
     t.string "house_type"
     t.integer "rooms"
     t.boolean "balcony"
