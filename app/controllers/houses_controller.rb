@@ -27,12 +27,11 @@ class HousesController < ApplicationController
     redirect_to houses_path
   end
 
-  def update
-  end
+  def update; end
 
-  private 
+  private
 
   def house_params
-    params.require(:house).permit(:address, :house_type, :rooms, :balcony, :size, :image) 
+    params.require(:house).permit(:address, :house_type, :rooms, :balcony, :size, :image)
   end
 end
