@@ -20,6 +20,8 @@ Rails.application.routes.draw do
       get 'houses/create'
       get 'houses/destroy'
       get 'houses/update'
+
+      resources :houses
     end
   end
 end

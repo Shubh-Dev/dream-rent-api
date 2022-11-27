@@ -1,6 +1,7 @@
-class Api::V1::HousesController < ApplicationController::API
+class Api::V1::HousesController < ApplicationController
   def index
     @houses = House.all.order(:id)
+    render json: @houses
   end
 
   def new
