@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <%# <a class="navbar-brand" href="#">Navbar</a> %>
+    <a class="navbar-brand">
+      <!-- Logo Image -->
+      <%# <img src="/assets/images/2.png" width="45" alt="" class="d-inline-block align-middle mr-2"> %>
+      <%= image_tag '2.png', height: 180, class: "d-inline-block align-middle mr-2" %>
+      Dream Home
+      <!-- Logo Text -->
+      <%# <span class="text-uppercase font-weight-bold">Dream Home</span> %>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <%# <a class="nav-link active" aria-current="page" href="#">New House</a> %>
+        <%= link_to 'Add House', houses_new_path , class: "nav-link" %>
+        <%# <a class="nav-link" href="#">Houses</a> %>
+      </div>
+    </div>
+  </div>
+</nav>
