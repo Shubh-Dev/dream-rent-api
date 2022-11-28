@@ -9,7 +9,7 @@ class HousesController < ApplicationController
 
   def show
     @house = House.find(params[:id])
-  end 
+  end
 
   def create
     @house = House.create!(house_params)
