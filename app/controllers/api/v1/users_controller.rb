@@ -1,4 +1,5 @@
 class Api::V1::UsersController < ApplicationController
+    skip_before_action :authenticate_user
     def register
         if User.find_by(user_params) == nil
           @user = User.new(user_params)
