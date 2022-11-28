@@ -1,0 +1,16 @@
+<div class="card-group m-5 p-5">
+  <% @houses.each do |h| %>
+    <%=link_to house_path(h) do %>
+      <div class="card p-5 m-5">
+        <img src='<%= url_for(h.image) %>' class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Address: <%= h.address %></h5>
+          <p class="card-text">House Type: <%= h.house_type %></p>
+          <p class="card-text"><small class="text-muted">Balcony?: <%= h.balcony %></small></p>
+          <p class="card-text"><small class="text-muted">Size: <%= h.size %></small></p>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+  
+</div>
