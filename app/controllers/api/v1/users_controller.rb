@@ -1,5 +1,4 @@
 class Api::V1::UsersController < ApplicationController
-
     def register
         if User.find_by(user_params) == nil
           @user = User.new(user_params)
@@ -13,7 +12,14 @@ class Api::V1::UsersController < ApplicationController
         end
     end
 
-    
+    def login 
+        @user = User.find_by(user_params)
+        if @user != nil
+            render json: {status: 'SUCCESS', message: 'User logged in', data: @user}, status: :ok
+        else
+            render json: {status: 'ERROR', message: 'User not found'}, status: :unprocessable_entity
+        end
+    end
 
     def user_params
         params.require(:user).permit(:name)
