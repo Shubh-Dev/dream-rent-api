@@ -3,7 +3,7 @@ class Api::V1::HousesController < ApplicationController
     @houses = House.all.order(:id)
     render json: @houses.map { |house|
                    house.as_json.merge(
-                     image_path: url_for(house.image)
+                    #  image_path: url_for(house.image)
                    )
                  }
   end
