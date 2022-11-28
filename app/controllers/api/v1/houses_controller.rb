@@ -2,8 +2,10 @@ class Api::V1::HousesController < ApplicationController
   def index
     @houses = House.all.order(:id)
     render json: @houses.map { |house|
-      house.as_json.merge(
-        image_path: url_for(house.image))}
+                   house.as_json.merge(
+                     image_path: url_for(house.image)
+                   )
+                 }
   end
 
   def new
@@ -12,10 +14,11 @@ class Api::V1::HousesController < ApplicationController
 
   def show
     @house = House.find(params[:id])
-    if @house.image.attached?
-      render json: @house.as_json.merge(
-        image_path: url_for(@house.image))
-    end
+    return unless @house.image.attached?
+
+    render json: @house.as_json.merge(
+      image_path: url_for(@house.image)
+    )
   end
 
   def create
