@@ -22,6 +22,7 @@ Rails.application.routes.draw do
       get 'houses/update'
       post 'users/login'
       post 'users/register'
+
       resources :houses
     end
   end
