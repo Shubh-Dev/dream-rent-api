@@ -5,6 +5,6 @@ class House < ApplicationRecord
   validate :check_file_presence
 
   def check_file_presence
-    errors.add(:image, "no image added") unless image.attached?
+    errors.add(:image, 'no image added') unless image.attached?
   end
 end
