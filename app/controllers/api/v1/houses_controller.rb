@@ -2,6 +2,7 @@ class Api::V1::HousesController < ApplicationController
   def index
     @houses = House.all.order(:id)
     render json: @houses.map { |house|
+                  return @house.mage.attached?
                    house.as_json.merge(
                      image_path: url_for(house.image)
                    )
