@@ -29,7 +29,9 @@
     </div>
     
     <div class="col-sm-7">
-      <img src="<%= (url_for(@house.image))%>" class="rounded mx-auto d-block" alt="...">
+      <% if @house.image.attached? %>
+        <img src="<%= (url_for(@house.image))%>" class="rounded mx-auto d-block" alt="...">
+      <% end %>
     </div>
     
     <div class="col">
