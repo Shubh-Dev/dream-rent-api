@@ -19,6 +19,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       post 'users/login'
       post 'users/register'
+      get 'users/index'
 
       resources :appointments
       resources :houses
