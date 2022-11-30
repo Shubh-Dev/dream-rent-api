@@ -34,7 +34,6 @@ class Api::V1::HousesController < ApplicationController
   def destroy
     house = House.find(params[:id])
     house.destroy
-    redirect_to houses_path
   end
 
   def update; end
