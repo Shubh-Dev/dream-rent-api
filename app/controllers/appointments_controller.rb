@@ -17,15 +17,15 @@ class AppointmentsController < ApplicationController
     @appointment = Appointment.create!(appoint_params)
     if @appointment.save
       render json: @appointment
-    else 
+    else
       @errors = @appointment.errors.full_messages
       render :new
     end
   end
 
-  private 
+  private
 
   def appoint_params
-    params.require(:appointment).permit(:time, :date, :visitors, :user_id, :house_id) 
+    params.require(:appointment).permit(:time, :date, :visitors, :user_id, :house_id)
   end
 end
