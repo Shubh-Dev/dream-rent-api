@@ -1,0 +1,16 @@
+<div class="card-group m-5 p-5">
+  <% @appointments.each do |a| %>
+    <%=link_to appointments_index_path(a) do %>
+      <div class="card p-5 m-5">
+        <h3 class="card-title">House ID: <%= a.house.id %></h3>
+        <h4 class="card-title">User ID: <%= a.user.id %></h4>
+        <div class="card-body">
+          <h5 class="card-title">Time: <%= a.time %></h5>
+          <p class="card-text">Date: <%= a.date %></p>
+          <p class="card-text"><small class="text-muted">Visitors: <%= a.visitors %></small></p>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+  
+</div>

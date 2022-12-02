@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'appointments/index'
+  get 'appointments/show'
+  get 'appointments/new'
+  post 'appointments/create'
   get 'houses/index'
   get 'houses/show'
   get 'houses/new'  
@@ -7,6 +11,7 @@ Rails.application.routes.draw do
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :houses
+  # resources :appointments, %i[index new show create]
   # Defines the root path route ("/")
   root to: 'houses#index'
 
@@ -14,7 +19,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       post 'users/login'
       post 'users/register'
+      get 'users/index'
 
+      resources :appointments
       resources :houses
     end
   end
