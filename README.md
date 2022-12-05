@@ -70,9 +70,6 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 
-
-
 👤 **Tuğsem Saranlı**
 
 - GitHub: [@githubhandle](https://github.com/tugsem/)
@@ -94,6 +91,12 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@Shubh-dev](https://github.com/Shubh-Dev)
 - LinkedIn: [Shubh Dev](https://www.linkedin.com/in/shubhscb/)
 
+
+👤 **Hamma Azarok**
+
+- GitHub: [@hammaagazarok](https://github.com/hammaazarok/)
+- Twitter: [Twitter](https://twitter.com/hamma10)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hammaagazarok/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
