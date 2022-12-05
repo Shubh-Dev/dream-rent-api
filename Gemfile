@@ -22,6 +22,8 @@ gem 'ruby_dev', '~> 0.1.0'
 
 gem 'sprockets-rails'
 
+gem 'rswag'
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
