@@ -73,7 +73,11 @@ To get a local copy up and running follow these simple example steps.
 👤 
 
 
-👤 
+👤 **Tuğsem Saranlı**
+
+- GitHub: [@githubhandle](https://github.com/tugsem/)
+- Twitter: [@twitterhandle](https://twitter.com/tugsemSaranli)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tugsem/)
 
 
 👤 **Asim Mehmood Khan**
