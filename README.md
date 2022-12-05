@@ -80,7 +80,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@githubhandle](https://github.com/AsimKhan2019/)
 - Twitter: [@twitterhandle](https://twitter.com/vtechbiz)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/asim-khan-9bbb4211/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/asim-khan/)
 
 
 👤 <a href="https://github.com/Shubh-Dev" target="blank"><img align="center"
