@@ -6,7 +6,7 @@
 
 # Dream Rent:
 
- A Rails Back-end application that interacts with a React front-end 
+ An API for the Dream Rent app. This API is used to store and retrieve data for the Dream Rent app. The API is built using Ruby on Rails and PostgreSQL. The API is deployed on Heroku and can be accessed at https://
 
  You can find the React Front-end application at [This Repo](https://github.com/Shubh-Dev/dream-rent.git)
 
@@ -69,6 +69,15 @@ To get a local copy up and running follow these simple example steps.
 
 
 ## Authors
+
+👤 
+
+
+👤 
+
+
+👤 
+
 
 👤 <a href="https://github.com/Shubh-Dev" target="blank"><img align="center"
       src="https://avatars.githubusercontent.com/u/46110284?v=4"
