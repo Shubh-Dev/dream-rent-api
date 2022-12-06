@@ -49,7 +49,10 @@
 
 ## Visit the live output at: 
 
-http://localhost:3000/api/v1/houses
+[Front End URL](https://dream-rent-booking.netlify.app/)
+
+[Back End URL](https://dream-rent-api-production.up.railway.app/)
+
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
