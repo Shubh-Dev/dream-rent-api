@@ -13,6 +13,16 @@
 </div>
 <hr>
 
+## Initial State (Kanban Board)
+
+![203625787-0a338c1b-e3df-4ec8-9aa4-f6976aaadd6e](https://user-images.githubusercontent.com/57537718/205941289-085e5b2d-734a-4751-a62b-bd6f2689e08e.png)
+
+## Final State (Kanban Board)
+
+![final state](https://user-images.githubusercontent.com/57537718/205941856-f434dec8-9dc8-4f04-af05-6c1bd993a2e6.png)
+
+
+
 ## 🛠 Built With
 
 <details>
