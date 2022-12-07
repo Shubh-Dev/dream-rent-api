@@ -1,0 +1,252 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/appointments":
+    post:
+      summary: Creates an appointment
+      tags:
+      - Appointments
+      parameters: []
+      responses:
+        '201':
+          description: appointment created
+        '422':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                date:
+                  type: string
+                time:
+                  type: string
+                visitors:
+                  type: integer
+                user_id:
+                  type: integer
+                house_id:
+                  type: integer
+              required:
+              - date
+              - time
+              - visitors
+              - user_id
+              - house_id
+          application/xml:
+            schema:
+              type: object
+              properties:
+                date:
+                  type: string
+                time:
+                  type: string
+                visitors:
+                  type: integer
+                user_id:
+                  type: integer
+                house_id:
+                  type: integer
+              required:
+              - date
+              - time
+              - visitors
+              - user_id
+              - house_id
+  "/houses":
+    post:
+      summary: Creates a house
+      tags:
+      - Houses
+      parameters: []
+      responses:
+        '201':
+          description: house created
+        '422':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                description:
+                  type: string
+                price:
+                  type: integer
+                address:
+                  type: string
+                user_id:
+                  type: integer
+              required:
+              - name
+              - description
+              - price
+              - address
+              - user_id
+          application/xml:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                description:
+                  type: string
+                price:
+                  type: integer
+                address:
+                  type: string
+                user_id:
+                  type: integer
+              required:
+              - name
+              - description
+              - price
+              - address
+              - user_id
+  "/houses/{id}":
+    get:
+      summary: Retrieves a house
+      tags:
+      - Houses
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: house found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                  description:
+                    type: string
+                  price:
+                    type: integer
+                  address:
+                    type: string
+                  user_id:
+                    type: integer
+                required:
+                - id
+                - name
+                - description
+                - price
+                - address
+                - user_id
+            application/xml:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                  description:
+                    type: string
+                  price:
+                    type: integer
+                  address:
+                    type: string
+                  user_id:
+                    type: integer
+                required:
+                - id
+                - name
+                - description
+                - price
+                - address
+                - user_id
+        '404':
+          description: house not found
+        '406':
+          description: unsupported accept header
+  "/users":
+    post:
+      summary: creates a user
+      tags:
+      - Users
+      parameters: []
+      responses:
+        '201':
+          description: user created
+        '422':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+              required:
+              - name
+          application/xml:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+              required:
+              - name
+  "/users/{id}":
+    get:
+      summary: Retrieves a user
+      tags:
+      - Users
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: user found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                required:
+                - id
+                - name
+            application/xml:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                required:
+                - id
+                - name
+        '404':
+          description: user not found
+        '406':
+          description: unsupported accept header
+servers:
+- url: https://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com

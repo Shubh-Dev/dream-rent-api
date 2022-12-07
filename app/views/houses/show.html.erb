@@ -1,0 +1,65 @@
+<div class="container m-5 p-5 mh-100">
+  <div class="row m-0 p-0">
+    <div class="col-sm-2 mh-100">
+      <div class="row d-flex align-items-start mb-5">
+        <div>
+          <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Houses</button>
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Reserve</button>
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">My Reservations</button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Add House</button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Delete House</button>
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"></div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"></div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"></div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"></div>
+          </div>
+        </div>
+      </div>
+       <div class="row d-flex align-items-end">
+        <div>
+          <a class="fa fa-facebook"></a>
+          <a class="fa fa-twitter"></a>
+          <a class="fa fa-google"></a>
+          <a class="fa fa-linkedin"></a>
+        </div>
+        </div>
+    </div>
+    
+    <div class="col-sm-7">
+      <% if @house.image.attached? %>
+        <img src="<%= (url_for(@house.image))%>" class="rounded mx-auto d-block" alt="...">
+      <% end %>
+    </div>
+    
+    <div class="col">
+      <p class="fs-3"><%= @house.address %></p>
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+            <td>House Type</td>
+            <td><%= @house.house_type %></td>
+          </tr>
+          <tr>
+            <td>Balcony</td>
+            <td><%= @house.balcony %></td>
+          </tr>
+          <tr>
+            <td>Rooms</td>
+            <td><%= @house.rooms %></td>
+          </tr>
+          <tr>
+            <td>Size</td>
+            <td><%= @house.size %></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="d-grid gap-2">
+        <a class="btn btn-primary" href="#" role="button">Reserve</a>
+        <%= link_to 'Delete', houses_destroy_path(@house), class: 'btn btn-primary' %>
+      </div>
+    </div>
+  </div>
+</div>

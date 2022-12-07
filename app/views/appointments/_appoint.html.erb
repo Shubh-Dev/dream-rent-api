@@ -1,0 +1,25 @@
+<%= form_with model: @appointment, url: appointments_create_path, method: :post, data: { turbo:false }, local: true do |form| %>
+  <div class="col-md-6">
+    <%= form.label :time, class: "form-label" %>
+    <%= form.text_field :time, class: "form-control" %>
+  </div>
+  <div class="col-md-6">
+    <%= form.label :date, class: "form-label" %>
+    <%= form.text_field :date, class: "form-control" %>
+  </div>
+  <div class="col-12">
+    <%= form.label :visitors, class: "form-label" %>
+    <%= form.text_field :visitors, class: "form-control" %>
+  </div>
+  <div class="col-md-4">
+   <%= form.label :user_id, class: "form-label" %>
+   <%= form.select :user_id, [["Select User", nil]] + @users.pluck(:name, :id), {}, {class: "form-control"} %>
+  </div>
+  <div class="col-md-4">
+   <%= form.label :house_id, class: "form-label" %>
+   <%= form.select :house_id, [["Select House", nil]] + @houses.pluck(:address, :id), {}, {class: "form-control"} %>
+  </div>
+  <div class="col-12">
+     <%= form.submit class: "btn btn-primary" %>
+  </div>
+<% end %>

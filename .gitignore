@@ -6,6 +6,7 @@
 
 # Ignore bundler config.
 /.bundle
+/config/database.yml
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -27,3 +28,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# .gitignore
+node_modules/
