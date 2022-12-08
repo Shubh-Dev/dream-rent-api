@@ -4,7 +4,7 @@ class CreateHouses < ActiveRecord::Migration[7.0]
       t.string :address
       t.string :house_type
       t.integer :rooms
-      t.boolean :balcony
+      t.boolean :balcony, null: false
       t.integer :size
 
       t.timestamps
