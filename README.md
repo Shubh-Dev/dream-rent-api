@@ -21,7 +21,7 @@
 
 ![final state](https://user-images.githubusercontent.com/57537718/205941856-f434dec8-9dc8-4f04-af05-6c1bd993a2e6.png)
 
-
+[Kanban Board](https://github.com/users/Shubh-Dev/projects/9/views/1)
 
 ## 🛠 Built With
 
@@ -52,6 +52,8 @@
 [Front End URL](https://dream-rent-booking.netlify.app/)
 
 [Back End URL](https://dream-rent-api-production.up.railway.app/)
+
+[API Documentation](https://dream-rent-api-production.up.railway.app/api-docs/index.html)
 
 
 ## Getting Started
